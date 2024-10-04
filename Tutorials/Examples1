@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+
+class Test {
+	static void Main() {
+        
+	}
+
+	static void EvenOdd() {
+        List<int> evens = new List<int>();
+        List<int> odds = new List<int>();
+        for(int i = 0; i < 20; i++) {
+            if(i%2 == 0) evens.Add(i);
+            else odds.Add(i); 
+        }
+        foreach(int even in evens)
+            Console.Write($"{even} ");
+        Console.WriteLine();
+        foreach(int odd in odds)
+            Console.Write($"{odd} ");
+	}
+	
+	static void Multiples() {
+	    int num = Convert.ToInt32(Console.ReadLine());
+        int len = Convert.ToInt32(Console.ReadLine());
+        
+        int[] multiples = new int[len];
+        
+        for(int i = 0; i < len; i++) multiples[i] = num*(i+1);
+        
+        foreach (int multiple in multiples) Console.Write($"{multiple} ");
+	}
+}

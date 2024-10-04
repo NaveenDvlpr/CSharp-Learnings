@@ -1,0 +1,20 @@
+using System;
+
+class Function {
+    static void Main(string[] args) {
+        Console.Title = MyName();
+        GreetUser(MyName());
+    }
+    
+    static void GreetUser(string name) {
+        Console.WriteLine($"Hello {name}");
+    }
+    
+    static string MyName() {
+        return "Aba";
+    }
+    
+    static int MyAge() {
+        return 25;
+    }
+}
